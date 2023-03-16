@@ -2,6 +2,7 @@ package com.example.saveuserpreferencessharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class UserActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
         //
-        SharedPreferences preferences = getSharedPreferences(MainActivity.Prefs_FileName, MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences(MainActivity.Prefs_FileName, Context.MODE_PRIVATE);
         String userName = preferences.getString(MainActivity.Key_UserName, null);
         //
         binding.userActivityTvDispName.setText(R.string.welcomeAppDear + userName);

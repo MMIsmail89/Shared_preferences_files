@@ -2,6 +2,7 @@ package com.example.saveuserpreferencessharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
         //
-        SharedPreferences preferences = getSharedPreferences(Prefs_FileName, MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences(Prefs_FileName, Context.MODE_PRIVATE);
         String userName = preferences.getString(Key_UserName, null);
         //
         if (userName!=null) {
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     binding.mainTvTitle.setText(R.string.welcomeApp + name + "!");
                     //
-                    SharedPreferences.Editor editor = getSharedPreferences(Prefs_FileName, MODE_PRIVATE).edit();
+                    SharedPreferences.Editor editor = getSharedPreferences(Prefs_FileName, Context.MODE_PRIVATE).edit();
                     editor.putString(Key_UserName, name);
                     editor.commit();
                     //
