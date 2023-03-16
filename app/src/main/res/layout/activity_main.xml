@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/main_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="4dp"
+
+        android:paddingStart="6dp"
+        android:text="@string/welcome_message_will_be_displayed_here"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_et_dispName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="start|center_vertical"
+        android:padding="4dp"
+        android:paddingStart="6dp"
+        android:hint="@string/please_enter_your_name"
+        android:layout_below="@id/main_tv_title"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/main_et_dispName"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Save user preferences SharedPreferences</string>
+    <string name="please_enter_your_name">please enter your name</string>
+    <string name="submit">Submit</string>
+    <string name="welcome_message_will_be_displayed_here">Welcome message will be displayed here</string>
+    <string name="welcome">Welcome</string>
+    <string name="valid_name_required">Please enter a valid name</string>
+    <string name="welcomeApp">Welcome to my App </string>
+    <string name="welcomeAppDear">Welcome to my Application dear </string>
+</resources>
